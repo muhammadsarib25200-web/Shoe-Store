@@ -116,6 +116,7 @@
   .search-header {
     width: 100%;
     margin-top: 10px;
+    position: absolute;
   }
 
   .search-box {
