@@ -31,13 +31,13 @@ export default function Footer() {
                     <h3>Quick Links</h3>
                     <a href="#">Shop</a>
                     <a href="#">Cart</a>
-                    <a href="#">Wishlist</a>
+                    <a href="/contact">Contact</a>
                 </div>
 
                 <div className="footer-col">
                     <h3>Customer Care</h3>
                     <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    <a href="/contact">Contact</a>
                     <a href="#">Return</a>
                 </div>
 

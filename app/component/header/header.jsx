@@ -21,7 +21,7 @@ export default function Header() {
 
             <nav className="header-links">
                 <Link href="/">Home</Link>
-                <Link href="/wishlist">Wishlist ({wishlist.length})</Link>
+<Link href="/contact">Contact</Link>
                 <Link href="/cart">Cart ({cart.length})</Link>
                 <Link href="/product">Shop</Link>
                 {currentUser ? (
