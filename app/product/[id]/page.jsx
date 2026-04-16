@@ -7,9 +7,9 @@ import { useStore } from '../../context/StoreContext';
 
 export default function ProductDetail() {
   const params = useParams();
-  const id = params.id;
+  const id = params?.id;
   const { getProductById, addToCart, currentUser } = useStore();
-  const product = getProductById(id);
+  const product = id ? getProductById(id) : null;
 
   const handleAddToCart = () => {
     if (!currentUser) {
