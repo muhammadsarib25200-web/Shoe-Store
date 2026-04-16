@@ -186,7 +186,7 @@ export function StoreProvider({ children }) {
 
     const storedCart = localStorage.getItem("cart");
     if (storedCart) setCart(JSON.parse(storedCart));
-    
+
     const storedWishlist = localStorage.getItem("wishlist");
     if (storedWishlist) setWishlist(JSON.parse(storedWishlist));
   }, []);

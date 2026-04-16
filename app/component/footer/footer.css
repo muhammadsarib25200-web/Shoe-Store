@@ -61,10 +61,12 @@
     margin-right: 5px;
 }
 
-.logo-footer-text{
+.logo-footer-text {
     background: linear-gradient(to right, #ffffff, #f9f9f9);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /* First section */

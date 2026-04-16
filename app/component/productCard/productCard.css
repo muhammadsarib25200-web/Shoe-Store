@@ -6,6 +6,7 @@
   box-shadow: 0 12px 25px rgba(15, 23, 42, 0.084);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 0;
 }
 
 .product-card:hover {
@@ -116,9 +117,11 @@ height: 220px;
 .product-card-content h2 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-   background: linear-gradient(90deg, #1b61fa, #9128f4);
+  background: linear-gradient(90deg, #1b61fa, #9128f4);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .product-card-content p {
