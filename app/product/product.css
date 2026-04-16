@@ -114,13 +114,45 @@
 }
 
 @media (max-width: 768px) {
+  .product-detail {
+    padding: 1.5rem 1rem;
+  }
+
   .detail-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
   .detail-image img {
-    height: 300px;
+    height: 350px;
+    object-fit: contain; /* Professional look for shoes */
+    background: #f8fafc;
+  }
+
+  .detail-content h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .detail-price {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .detail-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .add-to-cart-detail {
+    width: 100%;
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-image img {
+    height: 280px;
   }
 }
 
@@ -134,85 +166,52 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
-    padding: 0 0 2.5rem;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.125rem;
-    padding: 0 0 2.5rem;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-cont {
-    padding: 0 1.5rem;
-  }
-  
-  .product-grid {
-    gap: 1.25rem;
-    padding: 0 0 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-cont {
-    padding: 0 1rem;
-  }
-  
-  .product-grid {
-    grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0 0 2rem;
+    padding: 0 0.5rem 2rem;
   }
   
   .shoe-store-text {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+    padding: 30px 20px;
+    margin-top: 30px;
   }
   
   .shoe-store-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    padding: 0 1.5rem;
+    margin-top: -20px;
   }
 
   .search-container {
     padding: 0 1rem 1.5rem;
   }
-
-  .search-input {
-    padding: 0.875rem 1.25rem;
-    font-size: 0.95rem;
-  }
 }
 
-@media (max-width: 390px) {
-  .main-cont {
-    padding: 0 0.75rem;
-  }
-
+@media (max-width: 400px) {
   .product-grid {
-    gap: 0.875rem;
-    padding: 0 0 1.5rem;
+    grid-template-columns: 1fr; /* Single column on very small phones looks more professional for premium items */
+    gap: 1.5rem;
+    padding: 0 1rem 2rem;
   }
 
   .shoe-store-text {
-    font-size: 1.6rem;
-  }
-
-  .search-input {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }

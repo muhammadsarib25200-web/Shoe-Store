@@ -24,3 +24,24 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Global Responsive Helpers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px; /* Slightly smaller base font for mobile */
+  }
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
